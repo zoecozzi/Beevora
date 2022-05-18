@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #DDDEE5;
+}
+
+.header {
+    background-color: #0A012A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+
+.header .logo{
+    margin-left: 25px;
+}
+
+.header .menu{
+    background-color: #0A012A;
+    display: flex;
+    align-items: center;
+}
+
+.header .menu img {
+    width: 55%;
+}
+
+.user-profil, .logo, .fa-solid.fa-sliders, .menu img, .person-information img, .point, .case img, .case-cote img, .last i, .action img, .action i, .footer img, .footer i, .panier {
+    cursor: pointer;
+}
+
+.header .menu i::before {
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.pronostic .pronostic-person {
+    background: linear-gradient(94.23deg, #593AC6 4.85%, #1A0857 100.26%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 15px;
+}
+
+.pronostic .person-information {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: grid;
+}
+
+.pronostic .person-information .name {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.pronostic .person-information div, .pronostic .person-information img{
+    grid-area: 1;
+    margin-right: 15px;
+}
+
+.pronostic .person-information div span{
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+.pronostic .person-information .match-information {
+    font-size: 10px;
+}
+
+.indice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.indice p{
+    color: #757087;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+.indice .confiance .clair{
+    background-color: #301F6B33;
+    width: 120px;
+    height: 27px;
+    border-radius: 4px;
+}
+
+.indice .confiance .fonce{
+    background-color: #301F6B;
+    width: 85px;
+    height: 27px;
+    border-radius: 4px 0 0px 4px;
+}
+
+.indice .confiance .clair .indice-chiffre {
+    color: #301F6B;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 126px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.combinee .chiffre-nombre {
+    color: #0A012A;
+    font-family: 'Roboto', sans serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: auto;
+    margin-right: 18px;
+}
+
+.combinee .chiffre .case {
+    background-color: #EEEFF2;
+    width: 116px;
+    height: 27px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.combinee .chiffre::before {
+    position: absolute;
+    content: "";
+    background-image: url('images/Vector.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    z-index: 5;
+    margin-left: -22px;
+    margin-top: 4px;
+}
+
+.match h2{
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #0A012A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.match p{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #757087;
+}
+
+.match .buteur {
+    color: #0A012A;
+}
+
+.match .buteur span {
+    color: #0CC48B;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.match {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+}
+
+.match .categorie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.match .match-cote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.match .case-cote {
+    background-color: #DDDEE5;
+    width: 80px;
+    height: 25px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.match .case-cote img{
+    border-radius: 2px;
+}
+
+.match .case-cote p{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0CC48B;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.match-1 {
+    margin-bottom: 20px;
+}
+
+.match-2 {
+    margin-bottom: 20px;
+}
+
+.match-2 .buteur span{
+    color: #E52C41;
+}
+
+.match-2 .case-cote p{
+    color: #E52C41;
+}
+
+.match-2 .case-cote img {
+    background-color: #000000;
+}
+
+.match .last {
+    font-weight: 500;
+    color: #0A012A;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.match .last i{
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.pronostic .action {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.pronostic .action .fa-arrow-up-from-bracket, .pronostic .action .fa-regular.fa-clone{
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.pronostic .action div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+.pronostic .action div:last-child{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.pronostic .action img {
+    margin-right: 5px;
+}
+
+.rectangle-gagne {
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rectangle-gagne span{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.rectangle-vert{
+    width: 100px;
+    height: 45px;
+    transform: skew(20deg);
+    background: #0CC48B;
+    margin-right: 45px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle-gagne p{
+    text-align: center;
+    -msm-transform: skew(-20deg,0deg);
+	-moz-transform: skew(-20deg,0deg);
+	-o-transform: skew(-20deg,0deg);
+	-webkit-transform: skew(-20deg,0deg);
+	transform: skew(-20deg,0deg);
+}
+
+.person-information .fa-solid.fa-circle-plus{
+    color: #DCDAE2;
+    font-size: 12px;
+}
+
+.person-information .fa-solid.fa-circle-plus::before{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.rajout{
+    margin-right: 0px!important;
+}
+
+.panier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 68px;
+   height: 68px;
+   background: #593AC6; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+.panier div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0A012A;
+    font-size: 12px;
+    position: fixed;
+    bottom: 142px;
+    right: 24px;
+    width: 20px;
+   height: 20px;
+   background: #FFEB00; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+.match .buteur .couleur {
+    color: #301F6B;
+}
+
+.case-cote .chiffre-nombre.couleur{
+    color: #030010;
+}
+
+
+
+
+
+
+
+
+.footer{
+    height: 70px;
+    background-color: #0A012A;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer i{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.footer .accueil img{
+    width: 40px;
+    margin-left: -5px;
+    margin-top: -10px;
+}
+
+.footer .accueil p{
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.footer p {
+    color: white;
+    opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.footer .notifications {
+    display: grid;
+    row-gap: 5px;
+}
+
+.footer .prono {
+    display: grid;
+    row-gap: 5px;
+    margin-left: 5px;
+}
+
+.footer .explorer {
+    display: grid;
+    row-gap: 5px;
+}
+
+.footer .podium {
+    display: grid;
+    row-gap: 5px;
+}
+
